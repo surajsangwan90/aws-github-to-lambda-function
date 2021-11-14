@@ -21,4 +21,4 @@ def lambda_handler(event,context):
     with open(jsonFilePath,"w") as outfile:
         json.dump(data,outfile,indent=4)
         return json.dump(data,outfile,indent=4)
-lambda_handler()
+    print("Done x1.1")

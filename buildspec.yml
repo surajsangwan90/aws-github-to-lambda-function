@@ -7,7 +7,7 @@ phases:
       python: 3.8
     commands: 
       - echo "installing dependencies...."
-      -t lib
+      -t lib:
   build: 
     commands: 
       - echo "zippling deployment package.."

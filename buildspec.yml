@@ -4,7 +4,7 @@ batch:
 phases:
   install: 
     runtime-versions:
-      python: 3.8
+      python: 3.6
     commands: 
       - echo "installing dependencies...."
       - pip install -r requirements.txt -t lib

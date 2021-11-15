@@ -6,8 +6,8 @@ phases:
     runtime-versions:
       python: 3.8
     commands: 
-      - echo "installing dependencies...."
-      -t lib:
+      - echo "installing dependencies...."-
+      - t lib:
   build: 
     commands: 
       - echo "zippling deployment package.."

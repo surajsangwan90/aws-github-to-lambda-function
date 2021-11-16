@@ -1,4 +1,4 @@
-version: "$LATEST",
+version: 0.2
 batch:
   fast-fail: false
 phases:
@@ -19,18 +19,18 @@ phases:
     commands:
       - echo "Updating lambda function.."
       - aws lambda update-function-code --function-name aws-github-to-lambda-function --zip-file fileb://deployment_package.zip
-      # - aws lambda update-function-code --function-name MyLambdaFunction --zip-file fileb://my-deployment-package.zip
-      # {
-      # "FunctionName": "aws-github-to-lambda-function",
-      # "FunctionArn": "arn:aws:lambda:us-east-2:046278941389:function:aws-github-to-lambda-function",
-      # "Runtime": "python3.8",
-      # "Role": "arn:aws:iam::046278941389:role/service-role/codebuild-github-to-lambda-service-role1",
-      # "Handler": "lambda_function.lambda_handler",
-      # "CodeSize": 5912988,
-      # "CodeSha256": "A2P0NUWq1J+LtSbkuP8tm9uNYqs1TAa3M76ptmZCw5g=",
-      # "Version": "$LATEST",
-      # "RevisionId": "5afdc7dc-2fcb-4ca8-8f24-947939ca707f",
-      # ...
-      # }
-      - echo" Successful Done!!""
+    #   - aws lambda update-function-code --function-name MyLambdaFunction --zip-file fileb://my-deployment-package.zip
+    # {
+    # "FunctionName": "aws-github-to-lambda-function",
+    # "FunctionArn": "arn:aws:lambda:us-east-2:046278941389:function:aws-github-to-lambda-function",
+    # "Runtime": "python3.8",
+    # "Role": "arn:aws:iam::046278941389:role/service-role/codebuild-github-to-lambda-service-role1",
+    # "Handler": "lambda_function.lambda_handler",
+    # "CodeSize": 5912988,
+    # "CodeSha256": "A2P0NUWq1J+LtSbkuP8tm9uNYqs1TAa3M76ptmZCw5g=",
+    # "Version": "$LATEST",
+    # "RevisionId": "5afdc7dc-2fcb-4ca8-8f24-947939ca707f",
+    # ...
+    # }
+    - echo" Successful Done!!""
 
